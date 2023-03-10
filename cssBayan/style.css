@@ -1,4 +1,46 @@
 body {
     margin: 0;
-    background-color: #fff2cc;
+    background-color: #ffffff;
+    width: 100%;
+    font: 300 16px/20px 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.meme__section {
+    border: 1px #eeeeee solid;
+    margin: 10px 0;
+    box-shadow: 1px 3px 5px #cccccc;
+    cursor: pointer;
+}
+
+.meme__section:hover {
+    color: #777777;
+}
+
+.meme__section:hover .plus__icon {
+    display: block;
+}
+
+.meme__title_panel {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px 0 20px;
+}
+
+.meme__image {
+    display: none;
+    width: 450px;
+    height: 300px;
+    margin: 30px auto;
+}
+
+.plus__icon {
+    display: none;
+    margin: auto 0;
+    width: 20px;
+    height: 20px;
 }
