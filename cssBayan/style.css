@@ -115,6 +115,7 @@ label {
 
     .radio:checked ~ label .meme__image {
         height: 12em;
+        transition-duration: 0.5s;
     }
 
     .plus__icon {
@@ -139,10 +140,7 @@ label {
 
     .radio:checked ~ label .meme__image {
         height: 8em;
+        transition-duration: 0.5s;
     }
 
-    .plus__icon {
-        width: 0.5em;
-        height: 0.5em;
-    }
 }
