@@ -6,13 +6,17 @@ body {
     margin: 0;
     background-color: #ffffff;
     width: 100%;
-    font: 300 16px/20px 'Open Sans', sans-serif; /*изменить пиксели*/
+    font: 300 1em/1.2em 'Open Sans', sans-serif;
     color: #777777;
+}
+
+h1 {
+    font-size: 3em;
+    color: #000000;
 }
 
 header .wrapper {
     text-align: center;
-    color: #000000;
 }
 
 .wrapper {
@@ -34,9 +38,13 @@ label {
 
 .meme__section {
     width: 50%;
-    border: 1px #eeeeee solid; /*изменить пиксели*/
+    border: calc(1em/16) #eeeeee solid;
     margin: 0px auto;
-    box-shadow: 1px 3px 5px #cccccc;  /*изменить пиксели*/
+    box-shadow: calc(1em/16) calc(1em/16*3) calc(1em/16*5) #cccccc;
+}
+
+.meme__section:active {
+    opacity: 0.5;
 }
 
 .meme__section:hover .plus__icon {
@@ -46,19 +54,19 @@ label {
 
 
 .meme__section:hover .meme__image {
-    height: 300px; /*изменить пиксели*/
-    margin: 30px auto; /*изменить пиксели*/
+    height: 15em;
+    margin: 0 auto 3% auto;
 }
 
 .meme__title_panel {
     display: flex;
     justify-content: space-between;
-    padding: 0 50px 0 20px; /*изменить пиксели*/
+    padding: 0 7.5% 0 3%;
 }
 
 .meme__image {
     display: block;
-    width: 450px; /*изменить пиксели*/
+    width: 75%;
     height: 0;
     margin: 0 auto;
     transition-duration: 0.5s;
@@ -67,8 +75,8 @@ label {
 .plus__icon {
     display: none;
     margin: auto 0;
-    width: 20px; /*изменить пиксели*/
-    height: 20px; /*изменить пиксели*/
+    width: 1em;
+    height: 1em;
     transition-duration: 0.5s;
     transform: rotate(0deg);
 }
@@ -82,11 +90,11 @@ label {
 }
 
 .radio:checked ~ label .meme__image {
-    height: 300px; /*изменить пиксели*/
-    margin: 30px auto;
+    height: 50%;
+    margin: 0 auto 3% auto;
 }
 
 .radio:checked ~ label .plus__icon {
     transform: rotate(45deg);
-    display: inline-block;
+    display: block;
 }
