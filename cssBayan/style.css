@@ -39,12 +39,12 @@ label {
 .meme__section {
     width: 50%;
     border: calc(1em/16) #eeeeee solid;
-    margin: 0px auto;
+    margin: 0 auto;
     box-shadow: calc(1em/16) calc(1em/16*3) calc(1em/16*5) #cccccc;
 }
 
 .meme__section:active {
-    opacity: 0.5;
+    color: #777777;
 }
 
 .meme__section:hover .plus__icon {
@@ -66,7 +66,7 @@ label {
 
 .meme__image {
     display: block;
-    width: 75%;
+    width: 22em;
     height: 0;
     margin: 0 auto;
     transition-duration: 0.5s;
@@ -90,11 +90,59 @@ label {
 }
 
 .radio:checked ~ label .meme__image {
-    height: 50%;
+    height: 15em;
     margin: 0 auto 3% auto;
 }
 
 .radio:checked ~ label .plus__icon {
     transform: rotate(45deg);
     display: block;
+}
+
+@media (max-width: 820px) {
+    body {
+        font-size: 0.8em;
+        line-height: 1em;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .meme__image {
+        width: 17.8em;
+    }
+
+    .radio:checked ~ label .meme__image {
+        height: 12em;
+    }
+
+    .plus__icon {
+        width: 0.8em;
+        height: 0.8em;
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        font-size: 0.5em;
+        line-height: 0.7em;
+    }
+
+    h1 {
+        font-size: 1.2em;
+    }
+
+    .meme__image {
+        width: 11em;
+    }
+
+    .radio:checked ~ label .meme__image {
+        height: 8em;
+    }
+
+    .plus__icon {
+        width: 0.5em;
+        height: 0.5em;
+    }
 }
