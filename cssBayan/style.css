@@ -1,28 +1,51 @@
+::-webkit-scrollbar {
+    width: 0;
+  }
+
 body {
     margin: 0;
     background-color: #ffffff;
     width: 100%;
     font: 300 16px/20px 'Open Sans', sans-serif;
+    color: #777777;
+}
+
+header .wrapper {
+    text-align: center;
+    color: #000000;
 }
 
 .wrapper {
-    width: 50%;
+    width: 75%;
     margin: 0 auto;
 }
 
+.wrapper:hover {
+    color: #000000;
+}
+
+.wrapper:hover .plus__icon {
+    display: block;
+}
+
 .meme__section {
+    width: 50%;
     border: 1px #eeeeee solid;
-    margin: 10px 0;
+    margin: 0px auto;
     box-shadow: 1px 3px 5px #cccccc;
     cursor: pointer;
 }
 
-.meme__section:hover {
-    color: #777777;
+.meme__section:hover .plus__icon {
+    transform: rotate(45deg);
+    transition-duration: 0.5s;
 }
 
-.meme__section:hover .plus__icon {
-    display: block;
+
+.meme__section:hover .meme__image {
+    width: 450px;
+    height: 300px;
+    margin: 30px auto;
 }
 
 .meme__title_panel {
@@ -32,10 +55,11 @@ body {
 }
 
 .meme__image {
-    display: none;
-    width: 450px;
-    height: 300px;
-    margin: 30px auto;
+    display: block;
+    width: 0px;
+    height: 0px;
+    margin: 0px auto;
+    transition-duration: 0.5s;
 }
 
 .plus__icon {
