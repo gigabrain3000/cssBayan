@@ -4,6 +4,7 @@ body {
     width: 100%;
     font: 300 1em/1.2em 'Open Sans', sans-serif;
     color: #777777;
+    padding-bottom: 1em;
 }
 
 h1 {
@@ -129,7 +130,7 @@ label {
     }
 
     .wrapper {
-        width: 100%;
+        width: 90%;
     }
 
     h1 {
